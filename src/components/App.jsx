@@ -95,7 +95,7 @@ export class App extends Component {
         {!this.state.isLoading &&
           !this.state.error &&
           this.state.pictures &&
-          this.state.pictures.total > 12 && (
+          this.state.pictures.total / 12 > this.state.page && (
             <ButtonLoadMore
               onClick={() => this.onLoadMore(this.state.page)}
               page={this.state.page}
