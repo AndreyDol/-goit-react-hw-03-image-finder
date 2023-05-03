@@ -74,7 +74,7 @@ export class App extends Component {
       this.fetchImg();
     }
       window.scrollTo({
-      top: this.state.scroollHeightOld,
+      top: this.state.scroollHeightOld-150,
     behavior:"smooth"});
   }
 
